@@ -9,7 +9,7 @@ export const HeroSection: React.FC = () => {
     <section id="home" className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
       {/* Subtle background glow effect (refined, non-excessive) */}
       <div
-        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-tr from-[#8B7CFF]/10 via-[#57D6C5]/5 to-transparent rounded-full blur-3xl pointer-events-none -z-10"
+        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-tr from-[#059669]/15 via-[#57D6C5]/5 to-transparent rounded-full blur-3xl pointer-events-none -z-10"
         aria-hidden="true"
       />
 
@@ -19,7 +19,7 @@ export const HeroSection: React.FC = () => {
           <div className="lg:col-span-7 space-y-6 text-left">
             {/* Small introduction kicker & availability */}
             <div className="flex flex-wrap items-center gap-3">
-              <span className="text-xs font-semibold tracking-widest uppercase text-[#8B7CFF]">
+              <span className="text-xs font-semibold tracking-widest uppercase text-[#10B981]">
                 HELLO, I'M KHOLOUD
               </span>
               <span aria-hidden="true" className="text-white/20">·</span>
@@ -32,7 +32,7 @@ export const HeroSection: React.FC = () => {
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#F5F5F7] leading-[1.1] [text-wrap:balance]">
               Building Digital Experiences That{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8B7CFF] via-[#A89EFF] to-[#57D6C5]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10B981] via-[#059669] to-[#57D6C5]">
                 Make an Impact.
               </span>
             </h1>
@@ -69,7 +69,7 @@ export const HeroSection: React.FC = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub Profile"
-                  className="p-2.5 rounded-lg border border-white/10 bg-[#171C26]/60 text-[#A1A1AA] hover:text-[#F5F5F7] hover:border-white/25 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B7CFF]"
+                  className="p-2.5 rounded-lg border border-white/10 bg-[#171C26]/60 text-[#A1A1AA] hover:text-[#F5F5F7] hover:border-white/25 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981]"
                 >
                   <Github className="w-5 h-5" />
                 </a>
@@ -78,7 +78,7 @@ export const HeroSection: React.FC = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn Profile"
-                  className="p-2.5 rounded-lg border border-white/10 bg-[#171C26]/60 text-[#A1A1AA] hover:text-[#F5F5F7] hover:border-white/25 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B7CFF]"
+                  className="p-2.5 rounded-lg border border-white/10 bg-[#171C26]/60 text-[#A1A1AA] hover:text-[#F5F5F7] hover:border-white/25 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981]"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
@@ -111,7 +111,7 @@ export const HeroSection: React.FC = () => {
                   <span className="w-3 h-3 rounded-full bg-emerald-500/80" />
                 </div>
                 <div className="flex items-center gap-1.5 text-xs font-mono text-[#A1A1AA]">
-                  <Terminal className="w-3.5 h-3.5 text-[#8B7CFF]" />
+                  <Terminal className="w-3.5 h-3.5 text-[#10B981]" />
                   <span>kholoud.dev.tsx</span>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export const HeroSection: React.FC = () => {
               {/* Code Snippet Display */}
               <div className="mt-4 font-mono text-xs sm:text-[13px] leading-relaxed text-[#D1D5DB] space-y-1.5">
                 <div>
-                  <span className="text-[#8B7CFF]">const</span>{' '}
+                  <span className="text-[#10B981]">const</span>{' '}
                   <span className="text-[#57D6C5]">developer</span> = &#123;
                 </div>
                 <div className="pl-4">

@@ -7,7 +7,7 @@
     --bg-primary: #0B0D12;
     --bg-secondary: #11151D;
     --bg-card: #171C26;
-    --accent-primary: #8B7CFF;
+    --accent-primary: #059669;
     --accent-secondary: #57D6C5;
     --text-primary: #F5F5F7;
     --text-muted: #A1A1AA;
@@ -49,5 +49,5 @@
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #8B7CFF;
+  background: #059669;
 }

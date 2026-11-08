@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-2 space-y-4">
             <a
               href="#home"
-              className="text-lg font-bold tracking-tight text-[#F5F5F7] hover:text-[#8B7CFF] transition-colors inline-block"
+              className="text-lg font-bold tracking-tight text-[#F5F5F7] hover:text-[#10B981] transition-colors inline-block"
             >
               {developerInfo.name}
             </a>
@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
                 href={developerInfo.github}
                 target="_blank"
                 rel="noreferrer"
-                className="p-2.5 rounded-lg bg-[#171C26] text-[#F5F5F7] hover:text-[#8B7CFF] hover:border-white/20 border border-white/10 transition-colors"
+                className="p-2.5 rounded-lg bg-[#171C26] text-[#F5F5F7] hover:text-[#10B981] hover:border-white/20 border border-white/10 transition-colors"
                 aria-label="GitHub profile"
               >
                 <Github className="w-4 h-4" />
@@ -37,14 +37,14 @@ export const Footer: React.FC = () => {
                 href={developerInfo.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="p-2.5 rounded-lg bg-[#171C26] text-[#F5F5F7] hover:text-[#8B7CFF] hover:border-white/20 border border-white/10 transition-colors"
+                className="p-2.5 rounded-lg bg-[#171C26] text-[#F5F5F7] hover:text-[#10B981] hover:border-white/20 border border-white/10 transition-colors"
                 aria-label="LinkedIn profile"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
                 href={`mailto:${developerInfo.email}`}
-                className="p-2.5 rounded-lg bg-[#171C26] text-[#F5F5F7] hover:text-[#8B7CFF] hover:border-white/20 border border-white/10 transition-colors"
+                className="p-2.5 rounded-lg bg-[#171C26] text-[#F5F5F7] hover:text-[#10B981] hover:border-white/20 border border-white/10 transition-colors"
                 aria-label="Send email"
               >
                 <Mail className="w-4 h-4" />
@@ -99,7 +99,7 @@ export const Footer: React.FC = () => {
           </p>
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1.5 hover:text-[#F5F5F7] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B7CFF] rounded p-1"
+            className="flex items-center gap-1.5 hover:text-[#F5F5F7] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981] rounded p-1"
           >
             <span>Back to top</span>
             <ArrowUp className="w-3.5 h-3.5" />

@@ -83,14 +83,14 @@ export const ContactSection: React.FC = () => {
               {/* Email item with copy action */}
               <div className="p-3.5 rounded-xl bg-[#0B0D12] border border-white/5 flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3 overflow-hidden">
-                  <div className="p-2 rounded-lg bg-[#171C26] text-[#8B7CFF] shrink-0">
+                  <div className="p-2 rounded-lg bg-[#171C26] text-[#10B981] shrink-0">
                     <Mail className="w-4 h-4" />
                   </div>
                   <div className="overflow-hidden">
                     <span className="text-[11px] text-[#A1A1AA] block">Direct Email</span>
                     <a
                       href={`mailto:${developerInfo.email}`}
-                      className="text-xs sm:text-sm font-medium text-white hover:text-[#8B7CFF] transition-colors truncate block"
+                      className="text-xs sm:text-sm font-medium text-white hover:text-[#10B981] transition-colors truncate block"
                     >
                       {developerInfo.email}
                     </a>
@@ -100,7 +100,7 @@ export const ContactSection: React.FC = () => {
                 <button
                   type="button"
                   onClick={handleCopyEmail}
-                  className="p-2 text-[#A1A1AA] hover:text-white rounded-lg hover:bg-white/5 transition-colors shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B7CFF]"
+                  className="p-2 text-[#A1A1AA] hover:text-white rounded-lg hover:bg-white/5 transition-colors shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981]"
                   title="Copy email to clipboard"
                   aria-label="Copy email address"
                 >
@@ -116,7 +116,7 @@ export const ContactSection: React.FC = () => {
                   rel="noreferrer"
                   className="p-3.5 rounded-xl bg-[#0B0D12] border border-white/5 hover:border-white/20 transition-all flex items-center gap-3 group"
                 >
-                  <div className="p-2 rounded-lg bg-[#171C26] text-[#8B7CFF] group-hover:scale-105 transition-transform">
+                  <div className="p-2 rounded-lg bg-[#171C26] text-[#10B981] group-hover:scale-105 transition-transform">
                     <Linkedin className="w-4 h-4" />
                   </div>
                   <div>
@@ -131,7 +131,7 @@ export const ContactSection: React.FC = () => {
                   rel="noreferrer"
                   className="p-3.5 rounded-xl bg-[#0B0D12] border border-white/5 hover:border-white/20 transition-all flex items-center gap-3 group"
                 >
-                  <div className="p-2 rounded-lg bg-[#171C26] text-[#8B7CFF] group-hover:scale-105 transition-transform">
+                  <div className="p-2 rounded-lg bg-[#171C26] text-[#10B981] group-hover:scale-105 transition-transform">
                     <Github className="w-4 h-4" />
                   </div>
                   <div>
@@ -171,7 +171,7 @@ export const ContactSection: React.FC = () => {
                     onClick={() => setActiveChannel('email')}
                     className={`flex items-center gap-2 px-3.5 py-1.5 text-xs font-medium rounded-lg transition-colors cursor-pointer ${
                       activeChannel === 'email'
-                        ? 'bg-[#8B7CFF] text-[#0B0D12] font-semibold shadow-sm'
+                        ? 'bg-[#059669] text-white font-semibold shadow-sm'
                         : 'text-[#A1A1AA] hover:text-white'
                     }`}
                   >
@@ -199,7 +199,7 @@ export const ContactSection: React.FC = () => {
                 <div className="space-y-6 animate-fadeIn">
                   <div>
                     <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                      <Mail className="w-5 h-5 text-[#8B7CFF]" />
+                      <Mail className="w-5 h-5 text-[#10B981]" />
                       Send Direct Email
                     </h3>
                     <p className="text-xs sm:text-sm text-[#A1A1AA] mt-1">
@@ -220,7 +220,7 @@ export const ContactSection: React.FC = () => {
                           onClick={() => handleTopicSelect(t)}
                           className={`text-xs px-3 py-1.5 rounded-lg border transition-all ${
                             selectedTopic === t.label
-                              ? 'bg-[#8B7CFF]/15 border-[#8B7CFF] text-white font-medium'
+                              ? 'bg-[#059669]/20 border-[#10B981] text-white font-medium'
                               : 'bg-[#0B0D12] border-white/10 text-[#A1A1AA] hover:text-white hover:border-white/20'
                           }`}
                         >
@@ -240,7 +240,7 @@ export const ContactSection: React.FC = () => {
                       type="text"
                       value={emailSubject}
                       onChange={(e) => setEmailSubject(e.target.value)}
-                      className="w-full px-3.5 py-2.5 rounded-lg bg-[#0B0D12] border border-white/10 text-sm text-white focus:outline-none focus:border-[#8B7CFF] transition-colors"
+                      className="w-full px-3.5 py-2.5 rounded-lg bg-[#0B0D12] border border-white/10 text-sm text-white focus:outline-none focus:border-[#059669] transition-colors"
                     />
                   </div>
 
@@ -254,7 +254,7 @@ export const ContactSection: React.FC = () => {
                       rows={4}
                       value={emailNote}
                       onChange={(e) => setEmailNote(e.target.value)}
-                      className="w-full px-3.5 py-2.5 rounded-lg bg-[#0B0D12] border border-white/10 text-sm text-white focus:outline-none focus:border-[#8B7CFF] transition-colors resize-none"
+                      className="w-full px-3.5 py-2.5 rounded-lg bg-[#0B0D12] border border-white/10 text-sm text-white focus:outline-none focus:border-[#059669] transition-colors resize-none"
                     />
                   </div>
 

@@ -46,14 +46,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group relative rounded-2xl bg-[#171C26] border border-white/10 hover:border-[#8B7CFF]/45 overflow-hidden flex flex-col transition-colors duration-300 shadow-xl hover:shadow-[0_20px_48px_rgba(139,124,255,0.15)] text-left cursor-default"
+      className="group relative rounded-2xl bg-[#171C26] border border-white/10 hover:border-[#059669]/45 overflow-hidden flex flex-col transition-colors duration-300 shadow-xl hover:shadow-[0_20px_48px_rgba(5,150,105,0.18)] text-left cursor-default"
     >
       {/* Dynamic Cursor Spotlight Radial Follower */}
       <div
         className="pointer-events-none absolute -inset-px transition-opacity duration-300 rounded-2xl opacity-0 group-hover:opacity-100 z-20"
         style={{
           background: isHovered
-            ? `radial-gradient(550px circle at ${mousePos.x}px ${mousePos.y}px, rgba(139, 124, 255, 0.12), transparent 75%)`
+            ? `radial-gradient(550px circle at ${mousePos.x}px ${mousePos.y}px, rgba(5, 150, 105, 0.14), transparent 75%)`
             : 'none',
         }}
         aria-hidden="true"
@@ -61,7 +61,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
       {/* Top Specular Edge Highlight */}
       <div
-        className="absolute top-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-white/15 to-transparent group-hover:via-[#8B7CFF]/60 transition-all duration-500 z-20"
+        className="absolute top-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-white/15 to-transparent group-hover:via-[#10B981]/60 transition-all duration-500 z-20"
         aria-hidden="true"
       />
 
@@ -93,7 +93,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
         {/* Subtle interactive hover badge in top right */}
         <div className="absolute top-4 right-4 z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-1 group-hover:translate-y-0">
-          <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-[#171C26]/90 text-[#8B7CFF] border border-white/10 backdrop-blur-md">
+          <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-[#171C26]/90 text-[#10B981] border border-white/10 backdrop-blur-md">
             View Project
           </span>
         </div>
@@ -103,7 +103,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-6 relative z-10">
         <div className="space-y-4">
           <div>
-            <span className="text-xs text-[#8B7CFF] font-semibold tracking-wider uppercase block mb-1 group-hover:text-[#A89EFF] transition-colors">
+            <span className="text-xs text-[#10B981] font-semibold tracking-wider uppercase block mb-1 group-hover:text-[#34D399] transition-colors">
               {project.subtitle}
             </span>
             <h3 className="text-2xl font-bold text-[#F5F5F7] group-hover:text-white transition-colors duration-200">
@@ -123,7 +123,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <ul className="space-y-1.5 text-xs text-[#A1A1AA]">
               {project.keyFeatures.slice(0, 3).map((feat, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <span className="text-[#8B7CFF] font-bold group-hover:scale-125 transition-transform duration-200">·</span>
+                  <span className="text-[#10B981] font-bold group-hover:scale-125 transition-transform duration-200">·</span>
                   <span className="text-[#D1D5DB]">{feat}</span>
                 </li>
               ))}
@@ -172,7 +172,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               href={project.githubUrl}
               target="_blank"
               rel="noreferrer"
-              className="p-2 text-[#A1A1AA] hover:text-[#F5F5F7] rounded-lg border border-white/10 hover:border-white/25 bg-[#11151D] hover:bg-[#1E2432] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B7CFF] ml-auto"
+              className="p-2 text-[#A1A1AA] hover:text-[#F5F5F7] rounded-lg border border-white/10 hover:border-white/25 bg-[#11151D] hover:bg-[#1E2432] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981] ml-auto"
               aria-label={`View ${project.title} GitHub repository`}
               title="GitHub Repository"
             >

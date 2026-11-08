@@ -50,7 +50,7 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
                   onClick={() => setActiveCategory(cat)}
                   className={`px-3 py-1.5 text-xs font-medium rounded-lg whitespace-nowrap shrink-0 transition-colors cursor-pointer ${
                     isActive
-                      ? 'bg-[#8B7CFF] text-[#0B0D12] font-semibold shadow-sm'
+                      ? 'bg-[#059669] text-white font-semibold shadow-sm'
                       : 'text-[#A1A1AA] hover:text-[#F5F5F7] hover:bg-white/5'
                   }`}
                 >

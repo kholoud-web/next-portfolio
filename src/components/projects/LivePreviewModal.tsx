@@ -64,7 +64,7 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
             <div>
               <h3 id="preview-modal-title" className="text-sm font-semibold text-[#F5F5F7] flex items-center gap-2">
                 {project.title}
-                <span className="text-xs px-2 py-0.5 rounded bg-[#0B0D12] text-[#8B7CFF] border border-white/10 font-mono">
+                <span className="text-xs px-2 py-0.5 rounded bg-[#0B0D12] text-[#10B981] border border-white/10 font-mono">
                   Interactive Demo
                 </span>
               </h3>
@@ -113,7 +113,7 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
             </Button>
             <button
               onClick={onClose}
-              className="p-1.5 text-[#A1A1AA] hover:text-white rounded-lg hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B7CFF]"
+              className="p-1.5 text-[#A1A1AA] hover:text-white rounded-lg hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981]"
               aria-label="Close demo preview"
             >
               <X className="w-5 h-5" />
@@ -195,7 +195,7 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
                   <div className="flex items-center justify-between pb-4 border-b border-white/10">
                     <span className="text-lg font-bold text-white tracking-widest">AURORA</span>
                     <div className="flex items-center gap-2 text-xs bg-[#171C26] px-3 py-1.5 rounded-lg border border-white/10">
-                      <ShoppingBag className="w-4 h-4 text-[#8B7CFF]" />
+                      <ShoppingBag className="w-4 h-4 text-[#10B981]" />
                       <span>Shopping Bag ({cartCount})</span>
                     </div>
                   </div>
@@ -207,7 +207,7 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
                         key={cat}
                         onClick={() => setActiveCategory(cat)}
                         className={`text-xs px-3 py-1.5 rounded-md transition-colors ${
-                          activeCategory === cat ? 'bg-[#8B7CFF] text-black font-semibold' : 'bg-[#171C26] text-[#A1A1AA] hover:text-white'
+                          activeCategory === cat ? 'bg-[#059669] text-white font-semibold' : 'bg-[#171C26] text-[#A1A1AA] hover:text-white'
                         }`}
                       >
                         {cat}
@@ -230,7 +230,7 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
                           </div>
                           <div className="flex items-center justify-between text-xs">
                             <span className="font-medium text-white">{product.name}</span>
-                            <span className="font-bold text-[#8B7CFF]">{product.price}</span>
+                            <span className="font-bold text-[#10B981]">{product.price}</span>
                           </div>
                           <button
                             onClick={() => setCartCount((prev) => prev + 1)}
@@ -260,7 +260,7 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
                           key={city}
                           onClick={() => setSelectedCity(city)}
                           className={`text-xs px-3 py-1 rounded-md transition-colors ${
-                            selectedCity === city ? 'bg-[#8B7CFF] text-black font-semibold' : 'text-[#A1A1AA] hover:text-white'
+                            selectedCity === city ? 'bg-[#059669] text-white font-semibold' : 'text-[#A1A1AA] hover:text-white'
                           }`}
                         >
                           {city}
@@ -285,7 +285,7 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
                     </div>
                     <div className="p-5 rounded-xl bg-[#171C26] border border-white/10 space-y-1">
                       <span className="text-xs text-[#A1A1AA]">Wind Radar</span>
-                      <div className="text-4xl font-extrabold text-[#8B7CFF]">14 mph</div>
+                      <div className="text-4xl font-extrabold text-[#10B981]">14 mph</div>
                       <span className="text-xs text-[#A1A1AA]">North Gusts · 1014 hPa</span>
                     </div>
                   </div>
@@ -308,7 +308,7 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
                         placeholder="Add rapid task..."
                         value={newTaskInput}
                         onChange={(e) => setNewTaskInput(e.target.value)}
-                        className="bg-[#171C26] border border-white/10 rounded-lg px-3 py-1.5 text-xs text-white placeholder-[#71717A] focus:outline-none focus:border-[#8B7CFF]"
+                        className="bg-[#171C26] border border-white/10 rounded-lg px-3 py-1.5 text-xs text-white placeholder-[#71717A] focus:outline-none focus:border-[#059669]"
                       />
                       <button
                         onClick={() => {
@@ -320,7 +320,7 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
                             setNewTaskInput('');
                           }
                         }}
-                        className="px-3 py-1.5 rounded-lg bg-[#8B7CFF] text-black text-xs font-semibold hover:bg-[#9E91FF]"
+                        className="px-3 py-1.5 rounded-lg bg-[#059669] text-white text-xs font-semibold hover:bg-[#047857]"
                       >
                         + Add
                       </button>
@@ -377,7 +377,7 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
                 <div className="p-6 space-y-6">
                   <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-white/10">
                     <span className="font-bold text-white tracking-widest text-sm flex items-center gap-2">
-                      <Rocket className="w-4 h-4 text-[#8B7CFF]" />
+                      <Rocket className="w-4 h-4 text-[#10B981]" />
                       ASTRA VOX EXPEDITIONS
                     </span>
                     <div className="flex items-center gap-2 bg-[#171C26] p-1 rounded-lg">
@@ -397,7 +397,7 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                     <div className="space-y-4 text-left">
-                      <span className="text-xs uppercase tracking-widest text-[#8B7CFF]">
+                      <span className="text-xs uppercase tracking-widest text-[#10B981]">
                         Destination Dossier
                       </span>
                       <h4 className="text-3xl font-extrabold text-white">

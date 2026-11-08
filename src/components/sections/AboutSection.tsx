@@ -39,19 +39,19 @@ export const AboutSection: React.FC = () => {
               </p>
               <ul className="space-y-2 text-sm text-[#D1D5DB]">
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#8B7CFF] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" />
                   <span>
                     <strong className="text-white">Active Listening &amp; Requirement Discovery:</strong> Translating ambiguity and user pain points into precise functional technical specifications.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#8B7CFF] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" />
                   <span>
                     <strong className="text-white">Meticulous UX &amp; Accessibility:</strong> Treating every micro-interaction, keyboard flow, and loading state with respect for the end human user.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#8B7CFF] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" />
                   <span>
                     <strong className="text-white">Transparent Communication:</strong> Partnering smoothly with product managers, backend engineers, and design stakeholders to deliver on deadlines.
                   </span>
@@ -66,7 +66,7 @@ export const AboutSection: React.FC = () => {
 
           {/* Right Column: Key Pillars & Technical Strengths */}
           <div className="lg:col-span-5 space-y-4">
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#8B7CFF] mb-2 text-left">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#10B981] mb-2 text-left">
               Core Technical Strengths
             </h3>
 
@@ -89,7 +89,7 @@ export const AboutSection: React.FC = () => {
             {/* Quick highlight metric cards */}
             <div className="grid grid-cols-2 gap-3 pt-2">
               <div className="p-4 rounded-xl bg-[#171C26] border border-white/5 text-left">
-                <span className="text-2xl font-bold text-[#8B7CFF] tabular-nums block">
+                <span className="text-2xl font-bold text-[#10B981] tabular-nums block">
                   360px–4k
                 </span>
                 <span className="text-xs text-[#A1A1AA] mt-1 block">

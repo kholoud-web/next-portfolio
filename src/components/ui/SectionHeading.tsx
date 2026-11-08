@@ -20,7 +20,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
   return (
     <div className={`mb-12 md:mb-16 ${isCenter ? 'text-center mx-auto max-w-3xl' : 'max-w-3xl'} ${className}`}>
       {kicker && (
-        <div className="flex items-center gap-2 mb-3 text-xs font-semibold tracking-wider uppercase text-[#8B7CFF]">
+        <div className="flex items-center gap-2 mb-3 text-xs font-semibold tracking-wider uppercase text-[#10B981]">
           <span>{kicker}</span>
         </div>
       )}

@@ -32,14 +32,14 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
             <span className="text-lg font-bold text-[#F5F5F7] tracking-tight">
               {developerInfo.name}
             </span>
-            <span className="text-xs text-[#8B7CFF]">
+            <span className="text-xs text-[#10B981]">
               Frontend Developer
             </span>
           </div>
           <button
             onClick={onClose}
             aria-label="Close navigation menu"
-            className="p-2 text-[#A1A1AA] hover:text-white rounded-lg hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B7CFF]"
+            className="p-2 text-[#A1A1AA] hover:text-white rounded-lg hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981]"
           >
             <X className="w-6 h-6" />
           </button>

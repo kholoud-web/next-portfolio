@@ -27,7 +27,7 @@ export const CaseStudyView: React.FC<CaseStudyViewProps> = ({
         <div className="mb-8 flex items-center justify-between border-b border-white/10 pb-4">
           <button
             onClick={onBack}
-            className="inline-flex items-center gap-2 text-sm text-[#A1A1AA] hover:text-[#F5F5F7] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B7CFF] rounded px-2 py-1"
+            className="inline-flex items-center gap-2 text-sm text-[#A1A1AA] hover:text-[#F5F5F7] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981] rounded px-2 py-1"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to All Projects</span>
@@ -58,7 +58,7 @@ export const CaseStudyView: React.FC<CaseStudyViewProps> = ({
 
         {/* Case Study Header */}
         <div className="max-w-4xl space-y-4 mb-10">
-          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#8B7CFF]">
+          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#10B981]">
             <span>Case Study</span>
             <span aria-hidden="true">·</span>
             <span>{project.category}</span>
@@ -98,7 +98,7 @@ export const CaseStudyView: React.FC<CaseStudyViewProps> = ({
               <div className="flex items-center gap-6">
                 {project.caseStudy.metrics.map((m) => (
                   <div key={m.label} className="text-right">
-                    <span className="text-[#8B7CFF] font-bold tabular-nums block text-sm">
+                    <span className="text-[#10B981] font-bold tabular-nums block text-sm">
                       {m.value}
                     </span>
                     <span className="text-[11px] text-[#A1A1AA] block">{m.label}</span>
@@ -127,7 +127,7 @@ export const CaseStudyView: React.FC<CaseStudyViewProps> = ({
             {/* 2. My Role & Responsibilities */}
             <section className="space-y-4">
               <h2 className="text-2xl font-bold text-[#F5F5F7] flex items-center gap-2">
-                <Cpu className="w-5 h-5 text-[#8B7CFF]" />
+                <Cpu className="w-5 h-5 text-[#10B981]" />
                 My Role &amp; Contribution
               </h2>
               <div className="p-6 rounded-2xl bg-[#171C26] border border-white/10">
@@ -207,7 +207,7 @@ export const CaseStudyView: React.FC<CaseStudyViewProps> = ({
           <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
             {/* Main Features Card */}
             <div className="p-6 rounded-2xl bg-[#171C26] border border-white/10 space-y-4">
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#8B7CFF]">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#10B981]">
                 Core Features Implemented
               </h3>
               <ul className="space-y-3 text-sm text-[#D1D5DB]">
@@ -222,7 +222,7 @@ export const CaseStudyView: React.FC<CaseStudyViewProps> = ({
 
             {/* Technologies Used Card */}
             <div className="p-6 rounded-2xl bg-[#171C26] border border-white/10 space-y-3">
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#8B7CFF]">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#10B981]">
                 Tech Stack
               </h3>
               <div className="flex flex-wrap gap-2">

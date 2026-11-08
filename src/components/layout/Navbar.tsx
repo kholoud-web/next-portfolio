@@ -35,7 +35,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, activeSection = 'h
             {/* Zone 1: Brand wordmark (single line text element) */}
             <a
               href="#home"
-              className="text-lg font-bold tracking-tight text-[#F5F5F7] hover:text-[#8B7CFF] transition-colors whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B7CFF] rounded"
+              className="text-lg font-bold tracking-tight text-[#F5F5F7] hover:text-[#10B981] transition-colors whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981] rounded"
             >
               {developerInfo.name}
             </a>
@@ -74,7 +74,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, activeSection = 'h
               {/* Mobile menu trigger */}
               <button
                 type="button"
-                className="p-2 md:hidden text-[#A1A1AA] hover:text-white rounded-lg hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B7CFF]"
+                className="p-2 md:hidden text-[#A1A1AA] hover:text-white rounded-lg hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981]"
                 onClick={() => setMobileMenuOpen(true)}
                 aria-label="Open mobile menu"
                 aria-expanded={mobileMenuOpen}

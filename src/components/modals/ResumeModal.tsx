@@ -83,7 +83,7 @@ CORE SKILLS:
             </Button>
             <button
               onClick={onClose}
-              className="p-2 text-[#A1A1AA] hover:text-[#F5F5F7] rounded-lg hover:bg-white/5 transition-colors ml-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B7CFF]"
+              className="p-2 text-[#A1A1AA] hover:text-[#F5F5F7] rounded-lg hover:bg-white/5 transition-colors ml-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981]"
               aria-label="Close resume preview"
             >
               <X className="w-5 h-5" />
@@ -98,7 +98,7 @@ CORE SKILLS:
             <h1 className="text-2xl sm:text-3xl font-bold text-[#F5F5F7]">
               {developerInfo.name}
             </h1>
-            <p className="text-base text-[#8B7CFF] font-medium mt-1">
+            <p className="text-base text-[#10B981] font-medium mt-1">
               {developerInfo.title}
             </p>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[#A1A1AA] mt-3">
@@ -128,7 +128,7 @@ CORE SKILLS:
 
           {/* Professional Summary */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-[#8B7CFF] mb-2">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-[#10B981] mb-2">
               Professional Summary
             </h4>
             <p className="text-[#D1D5DB] text-sm leading-relaxed">
@@ -138,7 +138,7 @@ CORE SKILLS:
 
           {/* Technical Skills */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-[#8B7CFF] mb-3">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-[#10B981] mb-3">
               Technical Competencies
             </h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -162,7 +162,7 @@ CORE SKILLS:
 
           {/* Key Strengths */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-[#8B7CFF] mb-3">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-[#10B981] mb-3">
               Core Architectural Strengths
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
@@ -177,7 +177,7 @@ CORE SKILLS:
 
           {/* Career Journey & Transferable Skills */}
           <div className="border-t border-white/10 pt-6">
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-[#8B7CFF] mb-2">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-[#10B981] mb-2">
               Career Journey &amp; Transferable Expertise
             </h4>
             <p className="text-[#A1A1AA] text-xs leading-relaxed">

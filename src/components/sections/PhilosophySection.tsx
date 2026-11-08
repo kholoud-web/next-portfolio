@@ -28,15 +28,15 @@ const PhilosophyCard: React.FC<CardProps> = ({ item, index }) => {
   const getPhilosophyIcon = (id: string) => {
     switch (id) {
       case 'clean-architecture':
-        return <Shield className="w-5 h-5 text-[#8B7CFF] group-hover:scale-110 transition-transform duration-300" />;
+        return <Shield className="w-5 h-5 text-[#10B981] group-hover:scale-110 transition-transform duration-300" />;
       case 'reusable-components':
         return <CheckCircle className="w-5 h-5 text-[#57D6C5] group-hover:scale-110 transition-transform duration-300" />;
       case 'performance-first':
-        return <Gauge className="w-5 h-5 text-[#8B7CFF] group-hover:scale-110 transition-transform duration-300" />;
+        return <Gauge className="w-5 h-5 text-[#10B981] group-hover:scale-110 transition-transform duration-300" />;
       case 'responsive-design':
         return <MonitorSmartphone className="w-5 h-5 text-[#57D6C5] group-hover:scale-110 transition-transform duration-300" />;
       case 'accessibility':
-        return <Eye className="w-5 h-5 text-[#8B7CFF] group-hover:scale-110 transition-transform duration-300" />;
+        return <Eye className="w-5 h-5 text-[#10B981] group-hover:scale-110 transition-transform duration-300" />;
       case 'maintainability':
       default:
         return <Wrench className="w-5 h-5 text-[#57D6C5] group-hover:scale-110 transition-transform duration-300" />;
@@ -58,14 +58,14 @@ const PhilosophyCard: React.FC<CardProps> = ({ item, index }) => {
         ease: [0.16, 1, 0.3, 1],
       }}
       whileHover={{ y: -6, transition: { duration: 0.25, ease: 'easeOut' } }}
-      className="group relative p-6 sm:p-7 rounded-2xl bg-[#171C26] border border-white/10 hover:border-[#8B7CFF]/40 transition-colors duration-300 flex flex-col justify-between space-y-5 text-left overflow-hidden shadow-lg hover:shadow-[0_16px_36px_rgba(139,124,255,0.12)] cursor-default"
+      className="group relative p-6 sm:p-7 rounded-2xl bg-[#171C26] border border-white/10 hover:border-[#059669]/40 transition-colors duration-300 flex flex-col justify-between space-y-5 text-left overflow-hidden shadow-lg hover:shadow-[0_16px_36px_rgba(5,150,105,0.14)] cursor-default"
     >
       {/* Dynamic Cursor Spotlight Reflection */}
       <div
         className="pointer-events-none absolute -inset-px transition-opacity duration-300 rounded-2xl opacity-0 group-hover:opacity-100"
         style={{
           background: isHovered
-            ? `radial-gradient(400px circle at ${mousePos.x}px ${mousePos.y}px, rgba(139, 124, 255, 0.12), transparent 75%)`
+            ? `radial-gradient(400px circle at ${mousePos.x}px ${mousePos.y}px, rgba(5, 150, 105, 0.12), transparent 75%)`
             : 'none',
         }}
         aria-hidden="true"
@@ -73,16 +73,16 @@ const PhilosophyCard: React.FC<CardProps> = ({ item, index }) => {
 
       {/* Subtle top edge specular highlight line */}
       <div
-        className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:via-[#8B7CFF]/50 transition-all duration-500"
+        className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:via-[#10B981]/50 transition-all duration-500"
         aria-hidden="true"
       />
 
       <div className="space-y-4 relative z-10">
         <div className="flex items-center justify-between">
-          <div className="p-2.5 rounded-xl bg-[#0B0D12] border border-white/10 group-hover:border-[#8B7CFF]/30 group-hover:bg-[#11151D] transition-all duration-300 shadow-sm">
+          <div className="p-2.5 rounded-xl bg-[#0B0D12] border border-white/10 group-hover:border-[#059669]/30 group-hover:bg-[#11151D] transition-all duration-300 shadow-sm">
             {getPhilosophyIcon(item.id)}
           </div>
-          <span className="font-mono text-xs text-[#71717A] group-hover:text-[#8B7CFF] transition-colors duration-300 tabular-nums font-medium">
+          <span className="font-mono text-xs text-[#71717A] group-hover:text-[#10B981] transition-colors duration-300 tabular-nums font-medium">
             0{index + 1}
           </span>
         </div>

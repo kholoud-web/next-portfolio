@@ -18,7 +18,7 @@ export default function RootLayout({
   const isCaseStudy = pathname.startsWith('/projects/');
 
   return (
-    <div className="min-h-screen bg-[#0B0D12] text-[#F5F5F7] flex flex-col antialiased selection:bg-[#8B7CFF]/30 selection:text-white">
+    <div className="min-h-screen bg-[#0B0D12] text-[#F5F5F7] flex flex-col antialiased selection:bg-[#059669]/30 selection:text-white">
       {/* Sticky Navigation Header */}
       <Navbar
         onOpenResume={() => setIsResumeOpen(true)}

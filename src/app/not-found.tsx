@@ -9,12 +9,12 @@ export default function NotFound() {
     <div className="min-h-[70vh] flex items-center justify-center py-20 text-center">
       <Container>
         <div className="max-w-md mx-auto space-y-6">
-          <div className="w-16 h-16 rounded-2xl bg-[#171C26] border border-white/10 flex items-center justify-center mx-auto text-[#8B7CFF]">
+          <div className="w-16 h-16 rounded-2xl bg-[#171C26] border border-white/10 flex items-center justify-center mx-auto text-[#10B981]">
             <Compass className="w-8 h-8" />
           </div>
 
           <div className="space-y-2">
-            <span className="text-xs font-mono text-[#8B7CFF]">404 ERROR</span>
+            <span className="text-xs font-mono text-[#10B981]">404 ERROR</span>
             <h1 className="text-3xl font-bold text-[#F5F5F7]">
               Page Not Found
             </h1>
