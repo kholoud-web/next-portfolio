@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from '../lib/next-navigation';
+import Link from 'next/link';
 import { ArrowLeft, Compass } from 'lucide-react';
 import { Container } from '../components/ui/Container';
 import { Button } from '../components/ui/Button';

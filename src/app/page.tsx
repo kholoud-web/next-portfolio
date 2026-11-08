@@ -9,7 +9,7 @@ import { PhilosophySection } from '../components/sections/PhilosophySection';
 import { ContactSection } from '../components/sections/ContactSection';
 import { LivePreviewModal } from '../components/projects/LivePreviewModal';
 import { Project } from '../types/project';
-import { useRouter } from '../lib/next-navigation';
+import { useRouter } from 'next/navigation';
 
 export default function HomePage() {
   const router = useRouter();

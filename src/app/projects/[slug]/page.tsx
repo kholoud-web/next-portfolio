@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useParams, useRouter } from '../../../lib/next-navigation';
+import { useParams, useRouter } from 'next/navigation';
 import { projects } from '../../../data/projects';
 import { CaseStudyView } from '../../../components/projects/CaseStudyView';
 import NotFound from '../../not-found';
@@ -10,7 +10,8 @@ export default function ProjectCaseStudyPage() {
   const params = useParams<{ slug: string }>();
   const router = useRouter();
 
-  const project = projects.find((p) => p.slug === params.slug);
+  const slug = params?.slug;
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     return <NotFound />;
@@ -21,7 +22,6 @@ export default function ProjectCaseStudyPage() {
   };
 
   const handlePreviewLive = () => {
-    // Open preview or external link
     if (project.liveUrl) {
       window.open(project.liveUrl, '_blank', 'noreferrer');
     }
