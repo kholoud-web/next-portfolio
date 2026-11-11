@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { ArrowUp, Github, Linkedin, Mail } from 'lucide-react';
 import { developerInfo, navLinks } from '../../data/navigation';
@@ -94,7 +96,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar with Back to Top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#71717A]">
-          <p>
+          <p suppressHydrationWarning>
             © {new Date().getFullYear()} {developerInfo.name}. All rights reserved. Built with React, Next.js architecture, TypeScript &amp; Tailwind CSS.
           </p>
           <button

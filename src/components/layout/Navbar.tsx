@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { Menu, FileText } from 'lucide-react';
 import { navLinks, developerInfo } from '../../data/navigation';

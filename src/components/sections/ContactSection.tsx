@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { Mail, Linkedin, Github, Copy, Check, ArrowUpRight, MessageCircle, ExternalLink, Sparkles, Clock, CheckCircle2 } from 'lucide-react';
 import { developerInfo } from '../../data/navigation';

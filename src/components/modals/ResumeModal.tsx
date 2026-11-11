@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { X, Download, Printer, Check, Copy, ExternalLink } from 'lucide-react';
 import { developerInfo } from '../../data/navigation';
