@@ -2,9 +2,10 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, FileText } from 'lucide-react';
-import { navLinks, developerInfo } from '../../data/navigation';
+import { developerInfo } from '../../data/navigation';
 import { Button } from '../ui/Button';
 import { MobileMenu } from './MobileMenu';
+import { NavLinks } from './NavLinks';
 
 interface NavbarProps {
   onOpenResume: () => void;
@@ -32,9 +33,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, activeSection = 'h
         }`}
       >
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Top Bar Contract: 3 zones separated by gap-8 */}
           <div className="flex items-center justify-between gap-8">
-            {/* Zone 1: Brand wordmark (single line text element) */}
+            {/* Zone 1: Brand wordmark */}
             <a
               href="#home"
               className="text-lg font-bold tracking-tight text-[#F5F5F7] hover:text-[#10B981] transition-colors whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981] rounded"
@@ -42,26 +42,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, activeSection = 'h
               {developerInfo.name}
             </a>
 
-            {/* Zone 2: 4-5 concise single-line nav links */}
-            <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-[#A1A1AA]">
-              {navLinks.map((link) => {
-                const sectionId = link.href.replace('#', '');
-                const isActive = activeSection === sectionId;
-                return (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    className={`transition-colors whitespace-nowrap shrink-0 hover:text-[#F5F5F7] ${
-                      isActive ? 'text-[#F5F5F7] font-semibold' : ''
-                    }`}
-                  >
-                    {link.label}
-                  </a>
-                );
-              })}
-            </nav>
+            {/* Zone 2: Nav links */}
+            <NavLinks activeSection={activeSection} />
 
-            {/* Zone 3: 1 primary action */}
+            {/* Zone 3: Action */}
             <div className="flex items-center gap-3 shrink-0">
               <Button
                 variant="primary"
@@ -73,7 +57,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, activeSection = 'h
                 Download CV
               </Button>
 
-              {/* Mobile menu trigger */}
               <button
                 type="button"
                 className="p-2 md:hidden text-[#A1A1AA] hover:text-white rounded-lg hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981]"

@@ -1,22 +1,28 @@
+export interface ChallengeSolution {
+  challenge: string;
+  solution: string;
+}
+
+export interface TechnicalDecision {
+  decision: string;
+  rationale: string;
+}
+
 export interface ProjectCaseStudy {
   overview: string;
   problemStatement: string;
   role: string;
-  technicalDecisions: {
-    decision: string;
-    rationale: string;
-  }[];
+  technicalDecisions: TechnicalDecision[];
   architectureOverview: string;
-  challengesAndSolutions: {
-    challenge: string;
-    solution: string;
-  }[];
+  challengesAndSolutions: ChallengeSolution[];
   mainFeatures: string[];
   metrics?: {
     label: string;
     value: string;
   }[];
 }
+
+export type CaseStudy = ProjectCaseStudy;
 
 export interface Project {
   id: string;
