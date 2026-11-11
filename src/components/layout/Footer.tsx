@@ -1,21 +1,18 @@
 'use client';
 
 import React from 'react';
-import { ArrowUp, Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { developerInfo, navLinks } from '../../data/navigation';
 import { Container } from '../ui/Container';
+import { FooterBottom } from './FooterBottom';
 
 export const Footer: React.FC = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <footer className="border-t border-white/10 bg-[#0B0D12] pt-16 pb-12 text-[#A1A1AA] text-sm">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/5">
           {/* Brand & Summary */}
-          <div className="md:col-span-2 space-y-4">
+          <div className="md:col-span-2 space-y-4 text-left">
             <a
               href="#home"
               className="text-lg font-bold tracking-tight text-[#F5F5F7] hover:text-[#10B981] transition-colors inline-block"
@@ -55,7 +52,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-left">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-[#F5F5F7] mb-4">
               Navigation
             </h4>
@@ -74,7 +71,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Focus & Location */}
-          <div>
+          <div className="text-left">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-[#F5F5F7] mb-4">
               Availability
             </h4>
@@ -94,19 +91,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom Bar with Back to Top */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#71717A]">
-          <p suppressHydrationWarning>
-            © {new Date().getFullYear()} {developerInfo.name}. All rights reserved. Built with React, Next.js architecture, TypeScript &amp; Tailwind CSS.
-          </p>
-          <button
-            onClick={scrollToTop}
-            className="flex items-center gap-1.5 hover:text-[#F5F5F7] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981] rounded p-1"
-          >
-            <span>Back to top</span>
-            <ArrowUp className="w-3.5 h-3.5" />
-          </button>
-        </div>
+        <FooterBottom />
       </Container>
     </footer>
   );
