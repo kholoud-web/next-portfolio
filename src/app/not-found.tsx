@@ -24,10 +24,12 @@ export default function NotFound() {
           </div>
 
           <div>
-            <Link href="/">
-              <Button variant="primary" size="md" icon={<ArrowLeft className="w-4 h-4" />} iconPosition="left">
-                Return to Portfolio Home
-              </Button>
+            <Link
+              href="/"
+              className="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer whitespace-nowrap shrink-0 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0D12] active:scale-[0.98] text-sm px-4 py-2 gap-2 h-10 bg-[#059669] text-white font-semibold hover:bg-[#047857] shadow-sm hover:shadow-[0_0_20px_rgba(5,150,105,0.35)]"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              <span>Return to Portfolio Home</span>
             </Link>
           </div>
         </div>

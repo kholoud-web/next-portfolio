@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { X, ExternalLink, Maximize2, Laptop, Tablet, Smartphone, Check, ShoppingBag, CloudRain, CheckSquare, Rocket, Sparkles } from 'lucide-react';
 import { Project } from '../../types/project';
