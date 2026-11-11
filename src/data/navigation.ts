@@ -17,12 +17,12 @@ export const developerInfo = {
   title: 'Frontend Developer | React & Next.js Specialist',
   shortBio: 'Frontend Developer focused on building modern, responsive, accessible, and high-performance web applications.',
   email: 'kholud.mahmoud62@gmail.com',
-  whatsapp: '201000000000', // international format without + or spaces for wa.me link
-  whatsappFormatted: '+20 10 0000 0000',
-  github: 'https://github.com/kholoud-mahmoud',
-  linkedin: 'https://linkedin.com/in/kholoud-mahmoud',
+  whatsapp: '201014500049', // international format without + or spaces for wa.me link
+  whatsappFormatted: '+20 10 1450 0049',
+  github: 'https://github.com/kholoud-web',
+  linkedin: 'www.linkedin.com/in/kholoud-mahmoud-537588172',
   location: 'Available for Remote & Relocation',
   availabilityStatus: 'Available for select frontend engineering roles & freelance collaborations',
-  yearsOfFocus: '3+ Years',
-  coreStack: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Zustand']
+  yearsOfFocus: '1+ Years',
+  coreStack: ['React', 'Next.js', 'TypeScript', 'Restful APIs']
 };

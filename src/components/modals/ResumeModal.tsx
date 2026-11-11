@@ -30,7 +30,7 @@ ${developerInfo.shortBio}
 CORE SKILLS:
 - React.js, Next.js (App Router), TypeScript, JavaScript ES6+, HTML5, CSS3
 - Tailwind CSS, shadcn/ui, MUI, Bootstrap
-- Zustand, TanStack Query, React Context
+- Zustand, TanStack Query, React Context , Redux
 - React Hook Form, Zod
 - REST APIs, Git & GitHub, Figma
     `.trim();
