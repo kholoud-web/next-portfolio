@@ -10,10 +10,3 @@ export interface SkillCategory {
   description: string;
   skills: SkillItem[];
 }
-
-export interface PhilosophyItem {
-  id: string;
-  title: string;
-  description: string;
-  metricOrPractice: string;
-}

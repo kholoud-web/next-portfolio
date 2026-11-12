@@ -1,4 +1,5 @@
 import { spawn } from 'node:child_process';
+import { resolve } from 'node:path';
 
 // Convert any --host arguments to -H for next dev compatibility
 const args = ['dev'];
@@ -21,5 +22,22 @@ if (!args.includes('-H') && !args.includes('--hostname')) {
   args.push('-H', '0.0.0.0');
 }
 
-const child = spawn('npx', ['next', ...args], { stdio: 'inherit', shell: true });
-child.on('exit', (code) => process.exit(code ?? 0));
+const nextBin = resolve(process.cwd(), 'node_modules/next/dist/bin/next');
+const child = spawn(process.execPath, [nextBin, ...args], { stdio: 'inherit' });
+
+const forwardSignal = (signal) => {
+  if (!child.killed) {
+    child.kill(signal);
+  }
+};
+
+process.on('SIGINT', () => forwardSignal('SIGINT'));
+process.on('SIGTERM', () => forwardSignal('SIGTERM'));
+
+child.on('exit', (code, signal) => {
+  if (signal) {
+    process.kill(process.pid, signal);
+  } else {
+    process.exit(code ?? 0);
+  }
+});

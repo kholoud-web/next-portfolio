@@ -6,7 +6,7 @@ import { AboutStrengthsList } from './AboutStrengthsList';
 
 export const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="py-20 md:py-28 bg-[#11151D] border-y border-white/5">
+    <section id="about" className="py-20 md:py-28 bg-[#11151D]/50 backdrop-blur-[2px] border-y border-white/5">
       <Container>
         <SectionHeading
           kicker="Background &amp; Expertise"

@@ -12,7 +12,7 @@ export const ContactSection: React.FC = () => {
   const [activeChannel, setActiveChannel] = useState<'email' | 'whatsapp'>('email');
 
   return (
-    <section id="contact" className="py-20 md:py-28 bg-[#11151D] border-t border-white/5">
+    <section id="contact" className="py-20 md:py-28 bg-[#11151D]/50 backdrop-blur-[2px] border-t border-white/5">
       <Container>
         <SectionHeading
           kicker="Get In Touch"

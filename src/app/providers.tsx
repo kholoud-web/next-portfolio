@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { Navbar } from '../components/layout/Navbar';
 import { Footer } from '../components/layout/Footer';
 import { ResumeModal } from '../components/modals/ResumeModal';
+import { AnimatedBackground } from '../components/layout/AnimatedBackground';
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
@@ -13,7 +14,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const isCaseStudy = pathname?.startsWith('/projects/') ?? false;
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="relative min-h-screen flex flex-col">
+      <AnimatedBackground />
       {/* Sticky Navigation Header */}
       <Navbar
         onOpenResume={() => setIsResumeOpen(true)}

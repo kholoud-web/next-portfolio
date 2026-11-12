@@ -1,4 +1,4 @@
-import { SkillCategory, PhilosophyItem } from '../types/skill';
+import { SkillCategory } from '../types/skill';
 
 export const skillCategories: SkillCategory[] = [
   {
@@ -89,44 +89,5 @@ export const professionalStrengths = [
   {
     title: 'Clean & Maintainable Code',
     description: 'Applying SOLID principles, consistent naming, self-documenting code, and zero mechanical dead weight.'
-  }
-];
-
-export const philosophies: PhilosophyItem[] = [
-  {
-    id: 'clean-architecture',
-    title: 'Clean Architecture',
-    description: 'Separating UI presentation strictly from business logic and data access layers. Components stay small, single-purpose, and predictable.',
-    metricOrPractice: 'Decoupled domain modules & typed contracts'
-  },
-  {
-    id: 'reusable-components',
-    title: 'Reusable Components',
-    description: 'Composition over deep inheritance or oversized prop configurations. Every component is designed as a dependable primitive.',
-    metricOrPractice: 'Single Responsibility Principle'
-  },
-  {
-    id: 'performance-first',
-    title: 'Performance First',
-    description: 'Performance is a core design constraint, not an afterthought. Measuring Core Web Vitals, minimizing client JS, and optimizing rendering passes.',
-    metricOrPractice: 'Targeting 90+ Lighthouse across all metrics'
-  },
-  {
-    id: 'responsive-design',
-    title: 'Responsive Design',
-    description: 'True fluid typography, container queries, and mobile-first layouts that feel native on smartphones, tablets, and 4K workstations.',
-    metricOrPractice: '360px to 4K continuous fluid scales'
-  },
-  {
-    id: 'accessibility',
-    title: 'Accessibility (a11y)',
-    description: 'Digital experiences belong to everyone. Strict adherence to WCAG AA standards, semantic markup, logical focus order, and high contrast.',
-    metricOrPractice: 'WCAG AA 4.5:1 text & visible focus rings'
-  },
-  {
-    id: 'maintainability',
-    title: 'Maintainability',
-    description: 'Code is written for humans to read and evolve. Clear folder structures, comprehensive TypeScript typing, and clean git history.',
-    metricOrPractice: 'Strict TypeScript & zero guesswork code'
   }
 ];
