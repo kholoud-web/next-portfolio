@@ -8,12 +8,10 @@ import { SectionHeading } from '../ui/SectionHeading';
 import { ProjectCard } from '../projects/ProjectCard';
 
 interface FeaturedProjectsProps {
-  onSelectCaseStudy: (project: Project) => void;
   onPreviewLive: (project: Project) => void;
 }
 
 export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
-  onSelectCaseStudy,
   onPreviewLive
 }) => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
@@ -70,7 +68,6 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
               key={project.id}
               project={project}
               index={index}
-              onSelectCaseStudy={onSelectCaseStudy}
               onPreviewLive={onPreviewLive}
             />
           ))}

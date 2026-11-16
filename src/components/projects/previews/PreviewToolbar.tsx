@@ -3,13 +3,11 @@
 import React from 'react';
 import { X, Laptop, Tablet, Smartphone } from 'lucide-react';
 import { Project } from '../../../types/project';
-import { Button } from '../../ui/Button';
 
 interface PreviewToolbarProps {
   project: Project;
   deviceMode: 'desktop' | 'tablet' | 'mobile';
   onDeviceModeChange: (mode: 'desktop' | 'tablet' | 'mobile') => void;
-  onOpenCaseStudy: () => void;
   onClose: () => void;
 }
 
@@ -17,7 +15,6 @@ export const PreviewToolbar: React.FC<PreviewToolbarProps> = ({
   project,
   deviceMode,
   onDeviceModeChange,
-  onOpenCaseStudy,
   onClose
 }) => {
   return (
@@ -64,13 +61,6 @@ export const PreviewToolbar: React.FC<PreviewToolbarProps> = ({
 
       {/* Modal Actions */}
       <div className="flex items-center gap-2">
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={onOpenCaseStudy}
-        >
-          View Full Architecture
-        </Button>
         <button
           onClick={onClose}
           className="p-1.5 text-[#A1A1AA] hover:text-white rounded-lg hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981]"

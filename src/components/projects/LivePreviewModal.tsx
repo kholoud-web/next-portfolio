@@ -15,14 +15,12 @@ interface LivePreviewModalProps {
   project: Project | null;
   isOpen: boolean;
   onClose: () => void;
-  onOpenCaseStudy: (project: Project) => void;
 }
 
 export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
   project,
   isOpen,
-  onClose,
-  onOpenCaseStudy
+  onClose
 }) => {
   const [deviceMode, setDeviceMode] = useState<'desktop' | 'tablet' | 'mobile'>('desktop');
 
@@ -50,10 +48,6 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
           project={project}
           deviceMode={deviceMode}
           onDeviceModeChange={setDeviceMode}
-          onOpenCaseStudy={() => {
-            onClose();
-            onOpenCaseStudy(project);
-          }}
           onClose={onClose}
         />
 

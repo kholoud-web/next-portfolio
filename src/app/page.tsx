@@ -8,15 +8,9 @@ import { SkillsSection } from '../components/sections/SkillsSection';
 import { ContactSection } from '../components/sections/ContactSection';
 import { LivePreviewModal } from '../components/projects/LivePreviewModal';
 import { Project } from '../types/project';
-import { useRouter } from 'next/navigation';
 
 export default function HomePage() {
-  const router = useRouter();
   const [livePreviewProject, setLivePreviewProject] = useState<Project | null>(null);
-
-  const handleSelectCaseStudy = (project: Project) => {
-    router.push(`/projects/${project.slug}`);
-  };
 
   const handlePreviewLive = (project: Project) => {
     setLivePreviewProject(project);
@@ -26,10 +20,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <AboutSection />
-      <FeaturedProjects
-        onSelectCaseStudy={handleSelectCaseStudy}
-        onPreviewLive={handlePreviewLive}
-      />
+      <FeaturedProjects onPreviewLive={handlePreviewLive} />
       <SkillsSection />
       <ContactSection />
 
@@ -38,7 +29,6 @@ export default function HomePage() {
         project={livePreviewProject}
         isOpen={!!livePreviewProject}
         onClose={() => setLivePreviewProject(null)}
-        onOpenCaseStudy={handleSelectCaseStudy}
       />
     </>
   );

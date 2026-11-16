@@ -21,21 +21,6 @@ export const ProjectCardBody: React.FC<ProjectCardBodyProps> = ({ project }) => 
         {project.description}
       </p>
 
-      {/* Key Features Bullets */}
-      <div className="space-y-2 pt-1">
-        <span className="text-xs font-semibold text-[#F5F5F7] uppercase tracking-wider block">
-          Key Features:
-        </span>
-        <ul className="space-y-1.5 text-xs text-[#A1A1AA]">
-          {project.keyFeatures.slice(0, 3).map((feat, idx) => (
-            <li key={idx} className="flex items-start gap-2">
-              <span className="text-[#10B981] font-bold group-hover:scale-125 transition-transform duration-200">·</span>
-              <span className="text-[#D1D5DB]">{feat}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
       {/* Technology Stack Tags */}
       <div className="pt-2 border-t border-white/5 group-hover:border-white/10 transition-colors">
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-[#A1A1AA]">
