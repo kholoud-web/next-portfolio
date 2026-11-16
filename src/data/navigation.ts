@@ -17,9 +17,9 @@ export const developerInfo = {
   shortBio: 'Frontend Developer focused on building modern, responsive, accessible, and high-performance web applications.',
   email: 'kholud.mahmoud62@gmail.com',
   whatsapp: '201014500049', // international format without + or spaces for wa.me link
-  whatsappFormatted: '+20 10 1450 0049',
+  whatsappFormatted: '+201014500049',
   github: 'https://github.com/kholoud-web',
-  linkedin: 'www.linkedin.com/in/kholoud-mahmoud-537588172',
+  linkedin: 'https://www.linkedin.com/in/kholoud-mahmoud-537588172',
   location: 'Available for Remote & Relocation',
   availabilityStatus: 'Available for select frontend engineering roles & freelance collaborations',
   yearsOfFocus: '1+ Years',

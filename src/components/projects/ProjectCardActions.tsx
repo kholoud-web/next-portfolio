@@ -16,7 +16,7 @@ export const ProjectCardActions: React.FC<ProjectCardActionsProps> = ({
 }) => {
   return (
     <div className="pt-4 border-t border-white/10 group-hover:border-white/15 transition-colors flex flex-wrap items-center gap-3">
-      <Button
+      {/* <Button
         variant="primary"
         size="sm"
         icon={<BookOpen className="w-3.5 h-3.5" />}
@@ -24,7 +24,7 @@ export const ProjectCardActions: React.FC<ProjectCardActionsProps> = ({
         className="group/btn"
       >
         View Case Study
-      </Button>
+      </Button> */}
 
       <Button
         variant="secondary"

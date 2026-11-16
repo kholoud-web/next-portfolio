@@ -2,17 +2,17 @@ import { Project } from '../types/project';
 
 export const projects: Project[] = [
   {
-    id: 'upseeds',
-    slug: 'upseeds-platform',
-    title: 'Upseeds',
+    id: 'Educational APP',
+    slug: 'Educational APP',
+    title: 'Edunexa',
     subtitle: 'Startup & Angel Investor Networking Platform',
     description: 'A comprehensive platform connecting seed-stage startups, accredited investors, and entrepreneurs with streamlined pitch decks, real-time deal flow, and syndication tracking.',
-    image: '/src/assets/images/upseeds_platform_1793650027549.jpg',
+    image: '/src/assets/images/Edunexa.png',
     category: 'Full-Stack & Web Apps',
     featured: true,
-    technologies: ['Next.js (App Router)', 'TypeScript', 'Tailwind CSS', 'Zustand', 'REST APIs', 'Lucide React'],
-    liveUrl: 'https://upseeds.example.com',
-    githubUrl: 'https://github.com/kholoud-mahmoud/upseeds-platform',
+    technologies: ['React', 'Redux','.Net core', 'Tailwind CSS', 'REST APIs', 'Lucide React'],
+    liveUrl: 'https://edunexa-v1.vercel.app',
+    githubUrl: 'https://github.com/lamadarawsheh/EduNEXA.git',
     keyFeatures: [
       'Interactive pitch deck review portal with embedded document previews',
       'Deal flow pipeline tracking with multi-stage status management',
@@ -64,15 +64,15 @@ export const projects: Project[] = [
   {
     id: 'ecommerce',
     slug: 'ecommerce-platform',
-    title: 'Aurora Luxury E-Commerce',
+    title: 'Inovents',
     subtitle: 'Modern Minimalist Shopping Experience',
     description: 'An editorial shopping platform featuring instant faceted filtering, dynamic price range queries, real-time slide-over cart drawer management, and an accessible checkout flow.',
-    image: '/src/assets/images/ecommerce_platform_1793650027884.jpg',
+    image: '/src/assets/images/inovents.png',
     category: 'E-Commerce',
     featured: true,
     technologies: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Motion'],
-    liveUrl: 'https://aurora-store.example.com',
-    githubUrl: 'https://github.com/kholoud-mahmoud/aurora-ecommerce',
+    liveUrl: 'https://inovents.net/',
+    githubUrl: 'https://github.com/kholoud-web/Inovents.git',
     keyFeatures: [
       'Instant faceted search and multi-attribute filtering (brand, category, price, color)',
       'Persisted shopping bag drawer with optimistic item updates',
@@ -122,77 +122,17 @@ export const projects: Project[] = [
     }
   },
   {
-    id: 'weather',
-    slug: 'weather-application',
-    title: 'WeatherFlow',
-    subtitle: 'Dynamic Meteorological Intelligence App',
-    description: 'A responsive weather dashboard integrating real-time weather APIs, hourly temperature curves, UV and air quality indices, interactive wind radar vectors, and global city search.',
-    image: '/src/assets/images/weather_app_1793650028724.jpg',
-    category: 'Dashboard & API',
-    featured: true,
-    technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'REST API Integration', 'TanStack Query'],
-    liveUrl: 'https://weatherflow.example.com',
-    githubUrl: 'https://github.com/kholoud-mahmoud/weatherflow-app',
-    keyFeatures: [
-      'Real-time atmospheric telemetry and dynamic condition rendering',
-      'Hourly forecast visualizer with temperature trends and precipitation probability',
-      'Air Quality Index gauge with particulate matter (PM2.5, PM10) breakdowns',
-      'Global location autocomplete with browser geolocation auto-detection'
-    ],
-    caseStudy: {
-      overview: 'WeatherFlow is a meteorological dashboard providing detailed current and forecast data in an organized, non-overwhelming visual hierarchy. Built for fast data comprehension across mobile and desktop displays.',
-      problemStatement: 'Most consumer weather apps overwhelm users with intrusive advertisements, slow load times, and cluttered visual noise, making simple checks for hourly rain or wind conditions cumbersome.',
-      role: 'Sole Frontend Engineer: designed the user interface, created API wrapper clients, configured data caching policies, and implemented responsive layout structures.',
-      technicalDecisions: [
-        {
-          decision: 'TanStack Query for Intelligent API Caching',
-          rationale: 'Cached meteorological responses with a 10-minute stale time and background refetching on window focus, drastically lowering external API quotas.'
-        },
-        {
-          decision: 'Dynamic SVG Curves for Hourly Forecasts',
-          rationale: 'Rendered lightweight SVG path coordinates directly from temperature data arrays instead of loading heavy charting libraries.'
-        },
-        {
-          decision: 'Debounced City Autocomplete Client',
-          rationale: 'Structured geolocation lookup with a 300ms debounce to minimize request thrashing while keeping search feeling instant.'
-        }
-      ],
-      architectureOverview: 'Clean separation between the REST API client layer (`services/weatherApi.ts`), TanStack Query hooks (`hooks/useWeatherQuery.ts`), and purely presentational UI widgets (ForecastCard, AirQualityGauge, WindRadarMap).',
-      challengesAndSolutions: [
-        {
-          challenge: 'Gracefully handling edge cases such as network dropouts, expired API tokens, or unavailable geolocation permissions.',
-          solution: 'Constructed contextual error boundaries and user-friendly fallback cards with retry actions and default fallback locations.'
-        },
-        {
-          challenge: 'Converting raw meteorological measurements between imperial and metric systems seamlessly.',
-          solution: 'Implemented a localized unit conversion utility hook ensuring consistent numerical rounding across all weather modules.'
-        }
-      ],
-      mainFeatures: [
-        '7-day long-range weather outlook with temperature range bars',
-        'Animated wind speed and gust vectors with compass orientation',
-        'Automatic dark mode theme calibrated for low eye strain',
-        'Persistent favorite cities list stored in local browser state'
-      ],
-      metrics: [
-        { label: 'API Response Time', value: '110ms' },
-        { label: 'Lighthouse Performance', value: '99/100' },
-        { label: 'Zero JavaScript Dependencies', value: 'No chart libs' }
-      ]
-    }
-  },
-  {
-    id: 'task-management',
-    slug: 'task-management-app',
-    title: 'SyncFlow',
-    subtitle: 'Agile Task & Sprint Management System',
-    description: 'A focused project management application featuring reusable component systems, Kanban sprint columns, priority tag filters, task search, and reactive state management.',
-    image: '/src/assets/images/task_management_app_1793650030123.jpg',
+    id: 'Dar-Real-Estate',
+    slug: 'dar-real-estate',
+    title: 'Dar Real Estate',
+    subtitle: 'Modern Property Listing & Management Platform',
+    description: 'A cutting-edge real estate platform designed for seamless property browsing, advanced search capabilities, and intuitive property management tools.',
+    image: '/src/assets/images/Dar.png',
     category: 'Full-Stack & Web Apps',
     featured: true,
-    technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'Zustand', 'React Hook Form', 'Zod'],
-    liveUrl: 'https://syncflow.example.com',
-    githubUrl: 'https://github.com/kholoud-mahmoud/syncflow-tasks',
+    technologies: ['React.js', 'Tailwind CSS', 'Zustand', 'React Hook Form', 'Zod'],
+    liveUrl: 'https://real-estate-langing-page.vercel.app',
+    githubUrl: 'https://github.com/kholoud-web/Real-EstateLangingPage.git',
     keyFeatures: [
       'Multi-column Kanban boards with Backlog, To Do, In Progress, Review, and Done workflows',
       'Custom task creation modal with Zod schema validation and deadline pickers',
@@ -242,17 +182,17 @@ export const projects: Project[] = [
     }
   },
   {
-    id: 'space-tourism',
-    slug: 'space-tourism-website',
-    title: 'Astra Vox',
-    subtitle: 'Interactive Space Tourism & Planetary Discovery',
-    description: 'An immersive, multi-page space exploration website showcasing destination guides to Moon and Mars, interactive spacecraft technical specifications, crew dossiers, and booking flows.',
-    image: '/src/assets/images/space_tourism_web_1793650029109.jpg',
+    id: 'Furniture E-commerce App',
+    slug: 'furniture-ecommerce-app',
+    title: 'FurniStyle',
+    subtitle: 'Modern Furniture E-commerce Platform',
+    description: 'A sleek, user-friendly furniture e-commerce platform with intuitive browsing, advanced search, and seamless checkout experiences.',
+    image: '/src/assets/images/Furino.png',
     category: 'Interactive Experience',
     featured: true,
     technologies: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Motion'],
-    liveUrl: 'https://astravox-space.example.com',
-    githubUrl: 'https://github.com/kholoud-mahmoud/space-tourism',
+    liveUrl: 'https://e-commerce-furniture-zeta.vercel.app',
+    githubUrl: 'https://github.com/kholoud-web/E-commerce-Furniture.git',
     keyFeatures: [
       'Multi-destination planetary views with atmospheric data and excursion highlights',
       'Interactive spacecraft schematic with component callouts and technical specifications',
