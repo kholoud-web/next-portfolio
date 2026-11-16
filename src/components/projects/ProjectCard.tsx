@@ -10,14 +10,12 @@ import { ProjectCardActions } from './ProjectCardActions';
 interface ProjectCardProps {
   project: Project;
   index?: number;
-  onSelectCaseStudy: (project: Project) => void;
   onPreviewLive: (project: Project) => void;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   project,
   index = 0,
-  onSelectCaseStudy,
   onPreviewLive,
 }) => {
   const cardRef = useRef<HTMLElement>(null);
@@ -75,7 +73,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <ProjectCardBody project={project} />
         <ProjectCardActions
           project={project}
-          onSelectCaseStudy={onSelectCaseStudy}
           onPreviewLive={onPreviewLive}
         />
       </div>

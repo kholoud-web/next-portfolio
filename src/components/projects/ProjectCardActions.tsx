@@ -1,17 +1,15 @@
 import React from 'react';
-import { ArrowUpRight, Github, BookOpen } from 'lucide-react';
+import { ArrowUpRight, Github } from 'lucide-react';
 import { Project } from '../../types/project';
 import { Button } from '../ui/Button';
 
 interface ProjectCardActionsProps {
   project: Project;
-  onSelectCaseStudy: (project: Project) => void;
   onPreviewLive: (project: Project) => void;
 }
 
 export const ProjectCardActions: React.FC<ProjectCardActionsProps> = ({
   project,
-  onSelectCaseStudy,
   onPreviewLive,
 }) => {
   return (
