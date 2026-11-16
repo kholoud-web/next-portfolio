@@ -24,7 +24,7 @@ export const CaseStudyView: React.FC<CaseStudyViewProps> = ({
   }, [project.slug]);
 
   return (
-    <div className="min-h-screen bg-[#0B0D12] text-[#F5F5F7] pt-24 pb-24 text-left">
+    <div className="min-h-screen bg-transparent text-[#F5F5F7] pt-24 pb-24 text-left">
       <Container>
         <CaseStudyHero
           project={project}

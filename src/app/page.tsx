@@ -5,7 +5,6 @@ import { HeroSection } from '../components/sections/HeroSection';
 import { AboutSection } from '../components/sections/AboutSection';
 import { FeaturedProjects } from '../components/sections/FeaturedProjects';
 import { SkillsSection } from '../components/sections/SkillsSection';
-import { PhilosophySection } from '../components/sections/PhilosophySection';
 import { ContactSection } from '../components/sections/ContactSection';
 import { LivePreviewModal } from '../components/projects/LivePreviewModal';
 import { Project } from '../types/project';
@@ -32,7 +31,6 @@ export default function HomePage() {
         onPreviewLive={handlePreviewLive}
       />
       <SkillsSection />
-      <PhilosophySection />
       <ContactSection />
 
       {/* Interactive Live Demo Preview Modal */}

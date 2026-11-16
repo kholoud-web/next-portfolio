@@ -6,7 +6,7 @@ import { SkillCard } from './SkillCard';
 
 export const SkillsSection: React.FC = () => {
   return (
-    <section id="skills" className="py-20 md:py-28 bg-[#11151D] border-t border-white/5">
+    <section id="skills" className="py-20 md:py-28 bg-[#11151D]/50 backdrop-blur-[2px] border-t border-white/5">
       <Container>
         <SectionHeading
           kicker="Technical Repertoire"

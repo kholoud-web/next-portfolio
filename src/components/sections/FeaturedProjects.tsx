@@ -31,7 +31,7 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
     : projects.filter((p) => p.category === activeCategory);
 
   return (
-    <section id="projects" className="py-20 md:py-28 bg-[#0B0D12]">
+    <section id="projects" className="py-20 md:py-28 bg-transparent">
       <Container>
         {/* Section Heading */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
