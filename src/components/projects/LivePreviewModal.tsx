@@ -1,15 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
+import { ExternalLink } from 'lucide-react';
 import { Project } from '../../types/project';
 import { Button } from '../ui/Button';
 import { PreviewToolbar } from './previews/PreviewToolbar';
 import { BrowserAddressBar } from './previews/BrowserAddressBar';
-import { UpseedsPreview } from './previews/UpseedsPreview';
-import { EcommercePreview } from './previews/EcommercePreview';
-import { WeatherPreview } from './previews/WeatherPreview';
-import { TaskKanbanPreview } from './previews/TaskKanbanPreview';
-import { SpaceTourismPreview } from './previews/SpaceTourismPreview';
 
 interface LivePreviewModalProps {
   project: Project | null;
@@ -52,24 +48,48 @@ export const LivePreviewModal: React.FC<LivePreviewModalProps> = ({
         />
 
         <div className="flex-1 overflow-y-auto bg-[#0B0D12] p-4 sm:p-6 transition-all duration-300">
-          <div className={`transition-all duration-300 ${deviceWidthClass}`}>
-            <BrowserAddressBar slug={project.slug} />
+          <div className={`transition-all duration-300 h-full flex flex-col ${deviceWidthClass}`}>
+            <BrowserAddressBar slug={project.slug} liveUrl={project.liveUrl} />
 
-            <div className="rounded-b-xl border-x border-b border-white/10 bg-[#0B0D12] overflow-hidden min-h-[500px]">
-              {project.id === 'upseeds' && <UpseedsPreview />}
-              {project.id === 'ecommerce' && <EcommercePreview />}
-              {project.id === 'weather' && <WeatherPreview />}
-              {project.id === 'task-management' && <TaskKanbanPreview />}
-              {project.id === 'space-tourism' && <SpaceTourismPreview />}
+            <div className="rounded-b-xl border-x border-b border-white/10 bg-[#0B0D12] overflow-hidden flex-1 min-h-[500px] relative">
+              {project.liveUrl ? (
+                <iframe
+                  src={project.liveUrl}
+                  title={`${project.title} Live Demo`}
+                  className="w-full h-full min-h-[520px] border-0 bg-white"
+                  loading="lazy"
+                />
+              ) : (
+                <div className="p-8 text-center text-sm text-[#A1A1AA]">
+                  Live deployment preview unavailable.
+                </div>
+              )}
             </div>
           </div>
         </div>
 
-        <div className="px-6 py-3 border-t border-white/10 bg-[#171C26] flex items-center justify-between text-xs text-[#A1A1AA]">
-          <span>Full production-grade component state active in memory</span>
-          <Button variant="secondary" size="sm" onClick={onClose}>
-            Close Sandbox
-          </Button>
+        <div className="px-6 py-3 border-t border-white/10 bg-[#171C26] flex items-center justify-between gap-3 text-xs text-[#A1A1AA]">
+          <span className="truncate">
+            Previewing {project.liveUrl || project.title}
+          </span>
+          <div className="flex items-center gap-2 shrink-0">
+            {project.liveUrl && (
+              <Button
+                as="a"
+                href={project.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                variant="primary"
+                size="sm"
+                icon={<ExternalLink className="w-3.5 h-3.5" />}
+              >
+                Open Live Site
+              </Button>
+            )}
+            <Button variant="secondary" size="sm" onClick={onClose}>
+              Close
+            </Button>
+          </div>
         </div>
       </div>
     </div>
