@@ -35,7 +35,7 @@ export const ProjectCardActions: React.FC<ProjectCardActionsProps> = ({
 
       {project.githubUrl && (
         <a
-          href={project.githubUrl}
+          href={project.liveUrl}
           target="_blank"
           rel="noreferrer"
           className="p-2 text-[#A1A1AA] hover:text-[#F5F5F7] rounded-lg border border-white/10 hover:border-white/25 bg-[#11151D] hover:bg-[#1E2432] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981] ml-auto"
